@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button (click)="startProcess()">Start</button>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+          <ion-card>
+            <ion-card-header>Current Speed: </ion-card-header>
+            <ion-card-content>
+              <div>{{speed}} km/h</div>
+            </ion-card-content>  
+          </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card>
+          <ion-card-header>Sync time: {{time}}</ion-card-header>
+          <ion-card-content>
+            <div>Api called {{apiCalled}} times</div>
+          </ion-card-content>  
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-12>
+            <ion-card>
+              <ion-card-header>Debug: </ion-card-header>
+              <ion-card-content>
+                  <div [innerHtml]="debugString"></div>
+              </ion-card-content>  
+            </ion-card>
+        </ion-col>
+      </ion-row>
+  </ion-grid>  
+</ion-content> 
