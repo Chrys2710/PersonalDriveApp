@@ -22,6 +22,16 @@
       </ion-col>
       <ion-col col-6>
         <ion-card>
+          <ion-card-header>Speed limit: </ion-card-header>
+          <ion-card-content>
+            <div class="speedLimit">{{speedLimit}} km/h</div>
+          </ion-card-content>  
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <ion-card>
           <ion-card-header>Sync time: {{time}}</ion-card-header>
           <ion-card-content>
             <div>Api called {{apiCalled}} times</div>

@@ -12,6 +12,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Geolocation } from '@ionic-native/geolocation';
 import { HTTP } from '@ionic-native/http';
+import { UserAgent } from '@ionic-native/user-agent';
+import { Vibration } from '@ionic-native/vibration';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { HTTP } from '@ionic-native/http';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Geolocation,
-    HTTP
+    HTTP,
+    UserAgent,
+    Vibration
   ]
 })
 export class AppModule {}
